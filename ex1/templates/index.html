@@ -1,0 +1,9 @@
+{% extends "layout.html" %} <!--the following code extends my layout.html file-->
+
+{% block body %} <!-- tell flask there is some code...-->
+
+    <form action="/greet" method="post"><!-- post, not get-->
+        <input autocomplete="off" autofocus name="name" placeholder="Name" type="text">
+        <input type="submit">
+    </form>
+{% endblock %}
